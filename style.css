@@ -67,10 +67,6 @@ body {
   border-radius: 10px;
 }
 
-#item {
-  position: relative;
-}
-
 #item-name {
   display: block;
   font-weight: 700;
