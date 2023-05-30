@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+  background: url('./images/pattern-background-desktop.svg');
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-color: hsl(225, 100%, 94%);
+}
+
+#container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+#card {
+  width: 450px;
+  height: 697px;
+  border-radius: 30px;
+  text-align: center;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(224, 23%, 55%);
+}
+
+#banner {
+  background-image: url("./images/illustration-hero.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 220px;
+  border-radius: 30px 30px 0 0;
+}
+
+#main {
+  display: flex;
+  height: 477px;
+  padding: 3rem;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#summary h2 {
+  font-size: 1.75em;
+  margin-bottom: 1rem;
+  color: hsl(223, 47%, 23%);
+}
+
+#order {
+  background: url('./images/icon-music.svg') no-repeat center left 1.5rem;
+  position: relative;
+  padding: 1.5rem 1.5rem 1.5rem 88px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 10px;
+}
+
+#item {
+  position: relative;
+}
+
+#item-name {
+  display: block;
+  font-weight: 700;
+  color: hsl(223, 47%, 23%);
+}
+
+#change-option {  
+  line-height: 2.5rem;
+  display: inline;
+  font-weight: 700;
+  color: hsl(245, 75%, 52%);
+  text-decoration: underline;
+}
+
+#change-option:hover {
+  text-decoration: none;
+  color: hsl(245, 83%, 68%);
+  cursor: pointer;
+}
+
+#proceed-option {
+  display: block;
+  width: 100%;
+  height: 3.125rem;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  background-color: hsl(245, 75%, 52%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: 0 20px 20px hsla(245, 75%, 52%, 22%);
+}
+
+#proceed-option:hover {
+  background-color: hsl(245, 83%, 68%);
+  cursor: pointer;
+}
+
+#cancel-option {
+  font-weight: 700;
+}
+
+#cancel-option:hover {
+  color: hsl(223, 47%, 23%);
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+
+  body {
+    background: url('./images/pattern-background-mobile.svg');
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+  }
+
+  #card {
+    width: 327px;
+    height: 567px;
+  }
+
+  #banner {
+    height: 160px;
+  }
+
+  #main {
+    height: 407px;
+    padding: 2rem;
+  }
+}
